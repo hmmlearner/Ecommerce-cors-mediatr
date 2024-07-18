@@ -13,9 +13,9 @@ namespace Application.Common.Catalogue.Commands
         public Guid Id { get; set; }
         public UpdateCategoryDto UpdateCategory { get; set; } = default!;
 
-        public UpdateCategoryCommand(Guid recipe, UpdateCategoryDto updateCategory)
+        public UpdateCategoryCommand(Guid id, UpdateCategoryDto updateCategory)
         {
-            Id = recipe;
+            Id = id;
             UpdateCategory = updateCategory;
         }
     }
